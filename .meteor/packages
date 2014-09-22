@@ -8,4 +8,6 @@ autopublish
 insecure
 accounts-password
 accounts-ui
+coffeescript
+particle4dev:sass
 
