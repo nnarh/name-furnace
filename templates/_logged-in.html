@@ -1,0 +1,10 @@
+<template name="loggedIn">
+  {{> header}}
+  
+  {{#if gameInProgress}}
+    {{> game}}
+  {{else}}
+    {{> allNames}}
+    {{> addNameForm}}
+  {{/if}}
+</template>
