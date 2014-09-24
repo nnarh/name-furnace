@@ -3,14 +3,12 @@ accounts-password@1.0.1
 accounts-ui-unstyled@1.1.1
 accounts-ui@1.1.0
 application-configuration@1.0.2
-autopublish@1.0.0
 autoupdate@1.1.0
 base64@1.0.0
 binary-heap@1.0.0
 blaze-tools@1.0.0
 blaze@2.0.0
 boilerplate-generator@1.0.0
-bootstrap@1.0.1
 callback-hook@1.0.0
 check@1.0.0
 coffeescript@1.0.3
@@ -47,6 +45,7 @@ npm-container@1.0.0
 observe-sequence@1.0.2
 ordered-dict@1.0.0
 particle4dev:sass@0.2.9
+pinglamb:bootstrap3@3.2.1
 random@1.0.0
 reactive-dict@1.0.2
 reactive-var@1.0.1
