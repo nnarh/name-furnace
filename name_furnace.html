@@ -1,15 +1,45 @@
 <head>
-  <title>name_furnace</title>
+  <title>NameFurnace</title>
 </head>
 
 <body>
   {{> loginButtons}}
-  <h1>Welcome to Meteor!</h1>
-
-  {{> hello}}
+  
+  {{#if currentUser}}
+    {{> loggedIn}}
+  {{/if}}
 </body>
 
-<template name="hello">
-  <button>Click Me</button>
-  <p>You've pressed the button {{counter}} times.</p>
+<template name="loggedIn">
+  {{> header}}
+  
+  {{#if gameInProgress}}
+    {{> game}}
+  {{else}}
+    {{> allNames}}
+    {{> addNameForm}}
+  {{/if}}
+</template>
+
+<template name="game">
+  <p>play the game here!</p>
+</template>
+
+<template name="addNameForm">
+  <form>
+    <input type="text" id="nameText">
+    <input type="submit" value="add name">
+  </form>
+</template>
+
+<template name="allNames">
+  <ul>
+  {{#each names}}
+    <li>{{name}} - {{score}}</li>
+  {{/each}}
+  </ul>
+</template>
+
+<template name="header">
+  <h1>NameFurnace - <span id="startGame">START</span><span id="endGame">END</span></h1>
 </template>
