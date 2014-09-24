@@ -8,23 +8,3 @@ root.Template.allNames.names = ->
 
 root.Template.loggedIn.gameInProgress = ->
   root.Session.get('gameInProgress')
-
-root.Template.game.firstName = ->
-  root.Session.get('firstName')
-
-root.Template.game.secondName = ->
-  root.Session.get('secondName')
-
-root.Template.addNameForm.events
-  'submit form': (e, addNameTemplate) ->
-    e.preventDefault()
-    name = addNameTemplate.find('#nameText').value
-    root.Meteor.call('insertNameData', name)
-
-root.Template.header.events
-  'click #startGame': (e) ->
-    e.preventDefault()
-    root.Session.set('gameInProgress', true)
-  'click #endGame': (e) ->
-    e.preventDefault()
-    root.Session.set('gameInProgress', false)
