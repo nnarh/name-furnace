@@ -1,0 +1,13 @@
+.navbar{
+  .brand-text {
+    font-size: 34px;
+  }
+}
+
+#startGame, #endGame, #firstName, #secondName {
+  cursor: pointer;
+}
+
+#firstName, #secondName {
+  background-color: #eee;
+}
