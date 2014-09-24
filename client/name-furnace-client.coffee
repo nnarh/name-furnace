@@ -9,6 +9,11 @@ root.Template.allNames.names = ->
 root.Template.loggedIn.gameInProgress = ->
   root.Session.get('gameInProgress')
 
+root.Template.game.firstName = ->
+  root.Session.get('firstName')
+
+root.Template.game.secondName = ->
+  root.Session.get('secondName')
 
 root.Template.addNameForm.events
   'submit form': (e, addNameTemplate) ->
