@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "elo-rank": {
+      "version": "0.2.2"
+    },
+    "thesaurus": {
+      "version": "0.0.0"
+    }
+  }
+}

@@ -10,4 +10,7 @@ accounts-password
 accounts-ui
 coffeescript
 particle4dev:sass
+meteorhacks:npm
 
+
+npm-container
