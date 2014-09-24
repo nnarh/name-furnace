@@ -3,9 +3,20 @@
 </head>
 
 <body>
-  {{> loginButtons}}
-  
-  {{#if currentUser}}
-    {{> loggedIn}}
-  {{/if}}
+  <nav class="navbar navbar-default navbar-static-top" role="navigation">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-2 brand-text">NameFurnace</div>
+        <div class="col-md-3 col-md-offset-7">
+          {{> loginButtons}}
+        </div>
+      </div>    
+    </div>  
+  </nav>
+
+  <div class="container-fluid">
+    {{#if currentUser}}
+      {{> loggedIn}}
+    {{/if}}
+  </div> 
 </body>
