@@ -1,7 +1,32 @@
+h1 {
+  font-size: 36px;
+  margin-top: 10px;
+}
+
 .navbar{
   .brand-text {
-    font-size: 34px;
+    font-size: 52px;
+    text-align: left;
   }
+
+  .login-container {
+    text-align: left;
+    font-size: 17px;
+    padding-top: 12px;
+  }
+}
+
+#startGame:hover, #endGame:hover {
+  color: grey;
+}
+
+table tr td {
+  font-size: 22px;
+  width: 40%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 2%;
+  padding-bottom: 2%;
 }
 
 #startGame, #endGame, #firstName, #secondName {
@@ -10,4 +35,38 @@
 
 #firstName, #secondName {
   background-color: #eee;
+  height: 74px;
+  padding-top: 10px;
+  margin-bottom: 20px;
+}
+
+#nameText {
+  outline: 0px;
+  border: none;
+  border-bottom: 1px solid black;
+  font-size: 42px;
+  width: 94%;
+  margin: 2%;
+  padding: 1%;
+}
+
+.name-submit {
+  width: 98%;
+  margin: 1%;
+  height: 80px;
+  font-size: 22px;
+}
+
+.name-score {
+  width: 30%;
+}
+
+.name-text {
+  width: 70%;
+}
+
+.header-divider {
+  border-bottom: 1px solid #ccc;
+  padding-top: 20px;
+  margin-bottom: 20px;
 }
